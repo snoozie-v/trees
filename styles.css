@@ -22,21 +22,51 @@ html {
     }
     
     .hero-img, #service-area {
-        width: 40%;
-        height: 50%;
+        width: 60%;
+        height: auto;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         border-radius: 5%;
     }
-  
+    @media screen and (max-width: 690px) {
+        .hero-img, #service-area {
+            /* Adjust width and height for smaller screens */
+            width: 70%;  /* Example: making it wider for mobile */
+            height: auto; /* Example: letting height adjust automatically */
+            /* You can also adjust other properties if needed */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 5%;
+        }
+    }
+
+    @media screen and (min-width: 1069px) {
+        .hero-img, #service-area {
+            /* Adjust width and height for smaller screens */
+            width: 40%;  /* Example: making it wider for mobile */
+            height: auto; /* Example: letting height adjust automatically */
+            /* You can also adjust other properties if needed */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 5%;
+        }
+    }
     header p {
       color: #333;
     }
   
     
-  
+/*   
     nav {
       background-color: #333;
       padding-top: 9px;
+    } */
+
+    nav {
+        background-color: #333;
+        padding: 10px;
+        /* Position the nav bar at the top of the viewport */
+        position: sticky;
+        top: 0;
+        /* Ensure the nav doesn't overlap content */
+        z-index: 1000;
     }
   
     nav ul {
@@ -137,20 +167,29 @@ html {
       width: 70%
     }
   
+    @media screen and (max-width: 650px) {
+        form {
+            /* Adjust width and height for smaller screens */
+            width: 100%;  /* Example: making it wider for mobile */
+            height: auto; /* Example: letting height adjust automatically */
+            /* You can also adjust other properties if needed */
+        }
+    }
     #thank-you {
       display: grid;
       flex-direction: column;
     }
   
-  #name-input, #email-input, #phone-input {
-    width: 60%;
+  #name-input, #email-input, #phone-input, #description-input {
+    width: 90%;
   }
   
   
     #quote-about {
-      width: 70%;
-      padding: 15px;
+      width: 90%;
     }
+
+
     #service {
       margin-bottom: 15px;
     }
