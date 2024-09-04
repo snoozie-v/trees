@@ -15,11 +15,19 @@ html {
     }
     
     header {
-      background-color: #fff; /* dark background for header */
-      color: #fff; /* white text for header */
+      background-color: #fff; 
+      color: #333;
       padding: 9px;
       text-align: center;
     }
+
+    #map-container {
+        background-color: #333; /* dark background for header */
+        padding: 9px;
+        text-align: center;
+
+      }
+
     
     .hero-img, #service-area {
         width: 60%;
@@ -49,7 +57,7 @@ html {
         }
     }
     header p {
-      color: #333;
+
     }
   
     
